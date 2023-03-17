@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>807</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="background_frame">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="Apreview">
+          <attribute name="title">
+           <string>Consultar Anexo A</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="Ainsert">
+          <attribute name="title">
+           <string>Criar Anexo A</string>
+          </attribute>
+          <widget class="QFrame" name="frame_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>921</width>
+             <height>138</height>
+            </rect>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>202</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="tag_label">
+              <property name="text">
+               <string>TAG: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="tag_box_edit"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="data_label">
+              <property name="text">
+               <string>Data:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLineEdit" name="data_line_edit"/>
+            </item>
+            <item row="0" column="4">
+             <widget class="QToolButton" name="toolButton">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="equip_label">
+              <property name="text">
+               <string>Equipt:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="equip_line_edit"/>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="pessoal_label">
+              <property name="text">
+               <string>Pessoa Autorizada:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3" colspan="2">
+             <widget class="QLineEdit" name="pessoal_line_edit"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="area_label">
+              <property name="text">
+               <string>Area/Site: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="rev_label">
+              <property name="text">
+               <string>Revisão:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QLineEdit" name="rev_line_edit"/>
+            </item>
+            <item row="3" column="2">
+             <widget class="QLabel" name="station_label">
+              <property name="text">
+               <string>Estação de Energia:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3" colspan="2">
+             <widget class="QLineEdit" name="station_label_edit"/>
+            </item>
+            <item row="2" column="1" colspan="4">
+             <widget class="QLineEdit" name="area_label_edit"/>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QFrame" name="frame_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>180</y>
+             <width>921</width>
+             <height>161</height>
+            </rect>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="1" column="1">
+             <widget class="QCheckBox" name="m6_checkBox">
+              <property name="text">
+               <string>Pressão Pneumática</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QCheckBox" name="m12_checkBox">
+              <property name="text">
+               <string>Químico</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="m3_checkBox">
+              <property name="text">
+               <string>Alta Tensão</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QCheckBox" name="m8_checkBox">
+              <property name="text">
+               <string>Energia Mecânica</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QCheckBox" name="m13_checkBox">
+              <property name="text">
+               <string>Vapor</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QCheckBox" name="m16_checkBox">
+              <property name="text">
+               <string>OUTROS</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QCheckBox" name="m15_checkBox">
+              <property name="text">
+               <string>Gás</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="m5_checkBox">
+              <property name="text">
+               <string>Pressão Hidrodinâmica</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QCheckBox" name="m11_checkBox">
+              <property name="text">
+               <string>Pressão Hidráulica</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="m1_checkbox">
+              <property name="text">
+               <string>Energia Elétrica 220V</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="m10_checkBox">
+              <property name="text">
+               <string>Pressão Pneumática</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0" colspan="4">
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QCheckBox" name="m7_checkBox">
+              <property name="text">
+               <string>Sistema de Vácuo</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="m2_checkBox">
+              <property name="text">
+               <string>Energia Elétrica 440V</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QCheckBox" name="m4_checkBox">
+              <property name="text">
+               <string>Carga Acumulada</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="m9_checkBox">
+              <property name="text">
+               <string>Pressão Hidroestática</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QCheckBox" name="m14_checkBox">
+              <property name="text">
+               <string>Térmico</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QScrollBar" name="verticalScrollBar">
+           <property name="geometry">
+            <rect>
+             <x>941</x>
+             <y>9</y>
+             <width>16</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="title_label">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>921</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Cabeçalho</string>
+           </property>
+          </widget>
+          <widget class="QGraphicsView" name="graphicsView">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>390</y>
+             <width>921</width>
+             <height>291</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="image_label">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>360</y>
+             <width>221</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Previsualização de imagem:</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionarq1"/>
+    <addaction name="actionar2"/>
+    <addaction name="actionar3"/>
+   </widget>
+   <widget class="QMenu" name="menuOp_es">
+    <property name="title">
+     <string>Opções</string>
+    </property>
+    <addaction name="actionOp1"/>
+    <addaction name="actionOp2"/>
+    <addaction name="actionOp3"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionaj1"/>
+    <addaction name="actionaj2"/>
+    <addaction name="actionaj3"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuOp_es"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOp1">
+   <property name="text">
+    <string>Op1</string>
+   </property>
+  </action>
+  <action name="actionOp2">
+   <property name="text">
+    <string>Op2</string>
+   </property>
+  </action>
+  <action name="actionOp3">
+   <property name="text">
+    <string>Op3</string>
+   </property>
+  </action>
+  <action name="actionarq1">
+   <property name="text">
+    <string>arq1</string>
+   </property>
+  </action>
+  <action name="actionar2">
+   <property name="text">
+    <string>ar2</string>
+   </property>
+  </action>
+  <action name="actionar3">
+   <property name="text">
+    <string>ar3</string>
+   </property>
+  </action>
+  <action name="actionaj1">
+   <property name="text">
+    <string>aj1</string>
+   </property>
+  </action>
+  <action name="actionaj2">
+   <property name="text">
+    <string>aj2</string>
+   </property>
+  </action>
+  <action name="actionaj3">
+   <property name="text">
+    <string>aj3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
