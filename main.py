@@ -1,7 +1,8 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow
-from PyQt6.QtCore import Qt, QEvent, QSize
 from main_window import Ui_MainWindow
 import sys
+import time
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QGridLayout, QWidget, QProgressBar, QListWidget
+from PyQt6.QtCore import QRunnable, QObject, QThreadPool, pyqtSignal as Signal, pyqtSlot as Slot
 
 
 class MainWindow(QMainWindow):
