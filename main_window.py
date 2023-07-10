@@ -7,12 +7,18 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
+
+# import QSS_Resources_rc
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
+        MainWindow.setObjectName("Gerenciador de Anexos")
         MainWindow.resize(1035, 798)
+        MainWindow.setMinimumSize(QtCore.QSize(1035, 798))
         self.background_frame = QtWidgets.QWidget(MainWindow)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)
         sizePolicy.setHorizontalStretch(0)
